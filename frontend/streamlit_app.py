@@ -19,7 +19,7 @@ from streamlit_extras.metric_cards import style_metric_cards
 from streamlit_extras.stylable_container import stylable_container
 
 # Configuration
-API_BASE_URL = "http://127.0.0.1:8000"
+API_BASE_URL = "https://customer-churn-llm.onrender.com"
 DEFAULT_DATA_PATH = "data/telco_churn.csv"
 
 # Set page config
