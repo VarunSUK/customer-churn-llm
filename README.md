@@ -283,52 +283,93 @@ python src/predict.py
 python src/shap_explain.py
 ```
 
-## 🚧 Next Steps
 
-### Immediate Tasks
-1. **Add /recommend endpoint** - LLM-powered action planning
-2. **Message drafting endpoint** - Generate retention communications
-3. **Unit tests** - Comprehensive test coverage
-4. **Uplift modeling** - Estimate action effectiveness
 
-### Advanced Features
-1. **RAG integration** - Customer history and context
-2. **A/B testing** - Measure retention action effectiveness
-3. **Real-time monitoring** - Model performance tracking
-4. **Multi-model ensemble** - Improve prediction accuracy
 
-## 📝 Data Schema
+## 🤖 AI-Powered Features
 
-The Telco dataset includes:
+### Core AI Components
+- **Predictive Modeling**: LightGBM ensemble for accurate churn prediction
+- **SHAP-based Explainability**: Understand model decisions with SHAP values
+- **LLM Integration**: Gemini API for generating human-readable insights and recommendations
+- **Real-time Predictions**: Instant scoring of customer churn risk
+
+### Advanced AI Capabilities
+1. **Retrieval-Augmented Generation (RAG)**
+   - Context-aware responses using customer history
+   - Dynamic prompt engineering for personalized recommendations
+   - Knowledge base integration for up-to-date information
+
+2. **A/B Testing Framework**
+   - Measure effectiveness of retention strategies
+   - Statistical significance testing for model improvements
+   - Automated experiment tracking and analysis
+
+3. **Real-time Monitoring**
+   - Model performance tracking with Prometheus
+   - Data drift detection
+   - Automated retraining pipeline
+
+4. **Multi-model Ensemble**
+   - Combine predictions from multiple models
+   - Dynamic model weighting based on performance
+   - Fallback mechanisms for model failures
+
+## 📊 Data Schema
+
+The system processes the following Telco dataset features:
 
 **Categorical Features:**
-- gender, Partner, Dependents, PhoneService, MultipleLines
-- InternetService, OnlineSecurity, OnlineBackup, DeviceProtection
-- TechSupport, StreamingTV, StreamingMovies, Contract
-- PaperlessBilling, PaymentMethod
+- Customer Information: gender, Partner, Dependents
+- Service Usage: PhoneService, MultipleLines, InternetService
+- Service Add-ons: OnlineSecurity, OnlineBackup, DeviceProtection, TechSupport, StreamingTV, StreamingMovies
+- Billing: Contract, PaperlessBilling, PaymentMethod
 
 **Numeric Features:**
-- SeniorCitizen, tenure, MonthlyCharges, TotalCharges
+- SeniorCitizen (binary), tenure (months), MonthlyCharges ($), TotalCharges ($)
 
-**Target:**
-- Churn (Yes/No → 1/0)
+**AI-Enhanced Features:**
+- Churn probability score (0-1)
+- Feature importance scores
+- Customer lifetime value prediction
 
-## 🤝 Contributing
+## 🧠 AI Research & Development
 
+### Current AI Focus Areas
+- Improving prediction accuracy with deep learning
+- Enhancing natural language explanations
+- Implementing reinforcement learning for retention strategies
+- Developing fairness-aware model training
+
+### Contributing to AI Components
 1. Fork the repository
-2. Create a feature branch
-3. Add tests for new functionality
-4. Submit a pull request
+2. Create a feature branch for your AI enhancement
+3. Add tests for new AI functionality
+4. Document model performance improvements
+5. Submit a pull request with detailed explanation
 
 ## 📄 License
 
 This project is licensed under the MIT License.
 
-## 🙏 Acknowledgments
+## 🧠 AI & Machine Learning Stack
 
+### Core AI Technologies
+- **Machine Learning**: LightGBM, scikit-learn, SHAP
+- **Deep Learning**: PyTorch (future integration)
+- **LLM Integration**: Google's Gemini API
+- **MLOps**: MLflow, Weights & Biases (optional)
+
+### Data Processing
+- pandas, NumPy for data manipulation
+- Category Encoders for feature engineering
+- Imbalanced-learn for handling class imbalance
+
+### Acknowledgments
 - Telco Customer Churn dataset
-- LightGBM and SHAP libraries
+- LightGBM and SHAP for model interpretability
 - FastAPI and Streamlit communities
+- Google AI for Gemini API
 
 ## 📊 Project Impact
 
