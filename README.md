@@ -382,7 +382,7 @@ This project demonstrates:
 
 ## 👨‍💻 Author
 
-[Your Name] - [Your Email]
+Varun Sukhavasi - varunsuk@umich.edu
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://linkedin.com/in/yourprofile)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=flat&logo=github)](https://github.com/yourusername)
